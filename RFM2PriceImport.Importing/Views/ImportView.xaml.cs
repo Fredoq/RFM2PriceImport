@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.ComponentModel.Composition;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -13,14 +14,15 @@ using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
 
-namespace RFM2PriceImport
+namespace RFM2PriceImport.Importing.Views
 {
     /// <summary>
-    /// Interaction logic for MainWindow.xaml
+    /// Interaction logic for ImportView.xaml
     /// </summary>
-    public partial class MainWindow : Window
+    [Export("ImportView")]
+    public partial class ImportView : UserControl
     {
-        public MainWindow()
+        public ImportView()
         {
             InitializeComponent();
         }
